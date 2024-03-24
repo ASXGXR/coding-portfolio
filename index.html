@@ -1,83 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex Sagar's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Image Track -->
-    <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
-        <!-- Each image can be wrapped in anchor tags if they should link to more information -->
-        <img class="image" src="https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWgefHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" draggable="false" />
-        <!-- More images ... -->
-    </div>
+  <main>
+    <section id="hero">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Showcasing my work and skills</p>
+    </section>
 
-    <!-- Meta Links -->
-    <a id="source-link" class="meta-link" href="https://camillemormal.com" target="_blank">
-        <!-- Icons would require an icon library such as FontAwesome -->
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+        <img class="image" src="https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" draggable="false" alt="Project 1">
+        <img class="image" src="https://images.unsplash.com/photo-1610194352361-4c81a6a8967e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80" draggable="false" alt="Project 2">
+        <img class="image" src="https://images.unsplash.com/photo-1618202133208-2907bebba9e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" draggable="false" alt="Project 3">
+        <!-- Add more project images here -->
+      </div>
+      <a id="source-link" class="meta-link" href="https://camillemormal.com" target="_blank">
         <i class="fa-solid fa-link"></i>
         <span>Source</span>
-    </a>
-
-    <a id="yt-link" class="meta-link" href="https://youtu.be/PkADl0HubMY" target="_blank">
+      </a>
+      <a id="yt-link" class="meta-link" href="https://youtu.be/PkADl0HubMY" target="_blank">
         <i class="fa-brands fa-youtube"></i>
         <span>7 min tutorial</span>
-    </a>
-
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Header -->
-    <header id="home">
-        <h1>Alex Sagar</h1>
-        <p>Aspiring Developer</p>
-    </header>
-
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="your-photo.jpg" alt="Alex Sagar" style="width:150px;height:150px;">
-        <p>[Insert a personal introduction, your background, what drives you in technology, and other personal insights.]</p>
-        <h3>Skills</h3>
-        <ul>
-            <li>HTML & CSS</li>
-            <li>JavaScript</li>
-            <!-- Add more skills as needed -->
-        </ul>
+      </a>
     </section>
+  </main>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <!-- Project entries... -->
-    </section>
+  <footer>
+    <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+  </footer>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2024 Alex Sagar. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
