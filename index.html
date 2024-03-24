@@ -4,12 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alex Sagar's Portfolio</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <meta name="description" content="Alex Sagar's design and development portfolio showcasing skills and projects.">
-    <meta name="keywords" content="Alex Sagar, Portfolio, Web Developer, Designer, Projects">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Image Track -->
+    <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+        <!-- Each image can be wrapped in anchor tags if they should link to more information -->
+        <img class="image" src="https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWgefHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" draggable="false" />
+        <!-- More images ... -->
+    </div>
+
+    <!-- Meta Links -->
+    <a id="source-link" class="meta-link" href="https://camillemormal.com" target="_blank">
+        <!-- Icons would require an icon library such as FontAwesome -->
+        <i class="fa-solid fa-link"></i>
+        <span>Source</span>
+    </a>
+
+    <a id="yt-link" class="meta-link" href="https://youtu.be/PkADl0HubMY" target="_blank">
+        <i class="fa-brands fa-youtube"></i>
+        <span>7 min tutorial</span>
+    </a>
+
+    <!-- Navigation -->
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
@@ -19,11 +37,13 @@
         </ul>
     </nav>
 
+    <!-- Header -->
     <header id="home">
         <h1>Alex Sagar</h1>
         <p>Aspiring Developer</p>
     </header>
 
+    <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
         <img src="your-photo.jpg" alt="Alex Sagar" style="width:150px;height:150px;">
@@ -36,21 +56,16 @@
         </ul>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
-        <!-- Example project entry -->
-        <div class="project">
-            <img src="project-image1.jpg" alt="Project 1" style="width:100%;height:auto;">
-            <h3>Project Title 1</h3>
-            <p>Brief description of the project...</p>
-            <a href="https://live-project-link.com">Live Demo</a> | <a href="https://github.com/yourusername/project1">View Code</a>
-        </div>
-        <!-- Repeat for more projects -->
+        <!-- Project entries... -->
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <form action="server-side-script.php" method="POST">
+        <form>
             <input type="text" id="name" name="name" placeholder="Your Name" required>
             <input type="email" id="email" name="email" placeholder="Your Email" required>
             <textarea id="message" name="message" placeholder="Your Message" required></textarea>
@@ -58,16 +73,11 @@
         </form>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
-            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-            <!-- Add other social media links as needed -->
-        </div>
         <p>© 2024 Alex Sagar. All rights reserved.</p>
     </footer>
 
-    <script src="https://www.google-analytics.com/analytics.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
