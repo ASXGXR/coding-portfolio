@@ -30,7 +30,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a:hover {
+nav ul li a:hover, nav ul li a:focus { /* Added focus for keyboard navigation */
     background-color: #ddd;
     color: black;
 }
@@ -46,11 +46,13 @@ header {
 #about {
     background-color: #e7e7e7;
     padding: 20px;
+    text-align: center; /* Center the text for about section */
 }
 
 #about img {
     border-radius: 50%;
-    margin: 20px 0;
+    margin: 20px auto; /* Center the image */
+    display: block; /* Make sure the image is block to center it */
 }
 
 /* Projects Section Styles */
@@ -62,6 +64,7 @@ header {
     margin-bottom: 20px;
     border-bottom: 1px solid #ccc;
     padding-bottom: 20px;
+    text-align: center; /* Center the project titles and images */
 }
 
 .project img {
@@ -77,7 +80,11 @@ header {
 
 form {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 20px auto; /* Center the form */
+    padding: 20px;
+    background-color: white; /* Give the form a different background */
+    border-radius: 8px; /* Rounded corners for the form */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Soft shadow for depth */
 }
 
 input[type="text"], input[type="email"], textarea {
@@ -111,14 +118,33 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    position: relative;
-    bottom: 0;
     width: 100%;
+    clear: both; /* Clear floats to maintain the footer at the bottom */
+}
+
+.social-links a {
+    color: white; /* Ensure social links are white */
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.social-links a:hover, .social-links a:focus {
+    text-decoration: underline;
 }
 
 /* Responsive Styles */
 @media screen and (max-width: 600px) {
     nav ul li {
         float: none;
+    }
+    
+    nav ul li a {
+        text-align: left; /* Align text to the left on smaller screens */
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .social-links a {
+        display: block; /* Stack social links vertically on smaller screens */
+        margin: 0 0 10px 0;
     }
 }
