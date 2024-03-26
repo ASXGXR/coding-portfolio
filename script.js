@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     const handleScroll = e => {
         const scrollDelta = e.deltaY;
-        const scrollFactor = 0.5; // Adjust this value to control scroll sensitivity
+        const scrollFactor = 0.3; // Adjust this value to control scroll sensitivity
         handleOnMove(scrollDelta * scrollFactor, true);
     };
 
