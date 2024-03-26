@@ -1,32 +1,44 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    // Image Sequence Animation
+    const track = document.getElementById("image-track");
+    // Initially hide or disable the image track
+    track.style.pointerEvents = 'none';
+    track.style.opacity = '0';
+
     let frameCount = 147,
-        urls = new Array(frameCount).fill().map((o, i) => `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${(i+1).toString().padStart(4, '0')}.jpg`);
+        canvas = document.getElementById("image-sequence"),
+        ctx = canvas.getContext("2d"),
+        urls = new Array(frameCount).fill().map((o, i) => `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${(i+1).toString().padStart(4, '0')}.jpg`),
+        images = urls.map(url => {
+            let img = new Image();
+            img.src = url;
+            return img;
+        }),
+        loadedImages = 0;
 
-    function imageSequence(config) {
-        let playhead = { frame: 0 },
-            canvas = document.querySelector(config.canvas),
-            ctx = canvas.getContext("2d"),
-            images = config.urls.map(url => {
-                let img = new Image();
-                img.src = url;
-                return img;
-            });
-
-        gsap.to(playhead, {
-            frame: frameCount - 1,
-            ease: "none",
-            onUpdate: () => {
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
-                ctx.drawImage(images[Math.round(playhead.frame)], 0, 0);
-            },
-            scrollTrigger: {
-                trigger: canvas,
-                start: "top top",
-                end: "+=3000", // Adjust the length according to your needs
-                scrub: true
+    images.forEach((img) => {
+        img.onload = () => {
+            loadedImages++;
+            if (loadedImages === frameCount) {
+                startCanvasAnimation();
             }
-        });
+        };
+    });
+
+    function startCanvasAnimation() {
+        let currentFrame = 0;
+        function drawFrame() {
+            if (currentFrame < frameCount) {
+                requestAnimationFrame(drawFrame);
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx.drawImage(images[currentFrame++], 0, 0);
+            } else {
+                // Once the canvas animation is complete, reveal the image track
+                track.style.pointerEvents = 'auto';
+                track.style.opacity = '1';
+                // You might want to initiate or enable scrolling at this point as well
+            }
+        }
+        drawFrame();
     }
 
     imageSequence({
