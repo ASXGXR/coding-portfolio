@@ -1,9 +1,17 @@
 body {
-  height: 100vh;
-  width: 100vw;
-  background-color: black;
-  margin: 0rem;
+  min-height: 300vh; /* Adjusted to 'min-height' to accommodate content beyond the viewport */
+  background: #000;
+  margin: 0;
   overflow: hidden;
+}
+
+canvas {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100vw;
+  max-height: 100vh;
 }
 
 #image-track {
@@ -12,8 +20,8 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(0%, -50%); 
-  user-select: none; /* -- Prevent image highlighting -- */
+  transform: translate(0%, -50%);
+  user-select: none;
 }
 
 #image-track > .image {
