@@ -41,14 +41,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         drawFrame();
     }
 
-    imageSequence({
-        urls,
-        canvas: "#image-sequence"
-    });
-
     // Image Track Dragging and Scrolling
-    const track = document.getElementById("image-track");
-
     const handleOnDown = e => {
         track.dataset.mouseDownAt = e.clientX;
         track.dataset.prevPercentage = track.dataset.percentage || "0";
