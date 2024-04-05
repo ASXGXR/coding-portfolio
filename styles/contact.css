@@ -1,0 +1,36 @@
+form {
+  max-width: 500px;
+  margin: 20px auto 0px;
+  padding: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: calc(100% - 40px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #fff;
+  background: #757575;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.contact-section,
+.additional-contact {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.additional-contact h2 {
+  margin-bottom: 15px;
+}
+
+.additional-contact a:hover {
+  color: #fff;
+  text-decoration: underline;
+}

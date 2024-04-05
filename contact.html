@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me - Alex Sagar</title>
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/contact.css">
+
+  <!-- Add-ons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <div id="nav-placeholder"></div>
+  <script>
+    fetch('nav.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+      });
+  </script>
+
+
+  <!-- Content of my contact page -->
+  <section class="contact-section">
+    <h1>Get In Touch</h1>
+    <p>Feel free to reach out for collaborations or just a friendly hello!
+      <br>
+      I will reply via email, and will try to respond as soon as I can.
+    </p>
+
+    <!-- Contact Form -->
+    <form id="contact-form" action="your-server-endpoint" method="POST">
+      <fieldset>
+        <legend>Contact Information</legend>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </fieldset>
+      </a>
+    </form>
+
+    <a class="button" type="submit">
+      Send Message</a>
+  </section>
+
+  <!-- Additional Contact Details -->
+  <section class="additional-contact">
+    <h2>Other Ways to Reach Me</h2>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/alex-sagar/" title="Visit my LinkedIn profile">Alex Sagar</a>
+    </p>
+  </section>
+
+</body>
+
+</html>

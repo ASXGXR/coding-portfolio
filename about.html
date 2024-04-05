@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Alex Sagar</title>
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/about.css">
+
+  <!-- Add-ons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- JS files -->
+  <script src="./scripts/app.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <div id="nav-placeholder"></div>
+  <script>
+    fetch('nav.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+      });
+  </script>
+
+
+  <!-- Intro -->
+  <section class="about-section intro hidden">
+    <div class="image-container">
+      <img src="./images/Me-1.jpeg" alt="Alex Sagar" class="about-image-1">
+    </div>
+    <div class="intro-text">
+      <p>Hey, I'm Alex!<br>I love travelling, creating and training mixed martial arts. I appreciate
+        your visit!</p>
+    </div>
+  </section>
+
+
+  <!-- Text -->
+  <section class="about-section hidden">
+    <h1>About Me</h1>
+    <p>
+      A proud designer and programmer. My creative side allows me to create appealing and functional
+      websites,
+      while my technical skills allow me to build robust and scalable applications. <br><br>
+      Some advocate for specializing in one skill in the digital workspace, however I believe a good
+      understanding
+      of both code and design offers even greater value. I'm always eager to keep growing and evolving in this field!
+      <br><br>- Alex Sagar
+    </p>
+  </section>
+
+
+  <!-- Links -->
+  <section class="about-section hidden links-container">
+    <h2>My Online Links:</h2>
+    <div>
+      <a href="https://github.com/asxgxr" class="button" target="_blank">Github <i
+          class="fas fa-external-link-alt"></i></a>
+    </div>
+    <div>
+      <a href="https://linkedin.com/in/alex-sagar" class="button" target="_blank">LinkedIn <i
+          class="fas fa-external-link-alt"></i></a>
+    </div>
+  </section>
+
+
+  <!-- Software -->
+  <section class="about-section hidden">
+    <h2>Software</h2>
+    <p>
+      For software, I use Blender for my 3D work, and Adobe products for SVGs and image manipulation. <br><br>Here's my
+      full software breakdown:<br>- Blender (3D Art, Sculpting, VFX, Video Editing)<br>- CSS, Java, HTML
+      (Website
+      Creation)<br>- Figma (UI/UX Mockups)<br>- Python (Automated Coding, API calls)<br>- Adobe Illustrator (Logos, SVG
+      Design)
+    </p>
+  </section>
+
+
+  <!-- Contact -->
+  <section class="about-section hidden">
+    <h2>Contact</h2>
+    <p>
+      If you’d like to contact me you can do so on my <a href="contact.html">Contact Page</a>
+    </p>
+  </section>
+</body>
+
+</html>
