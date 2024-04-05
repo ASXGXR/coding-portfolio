@@ -1,4 +1,5 @@
-/* Shared styles for .about-section */
+/* about.css */
+
 .about-section {
   display: column;
   align-items: center;
@@ -36,7 +37,6 @@
   width: 100%;
   padding-top: 56.25%;
   max-width: 45vw;
-  max-height: auto;
 }
 
 .about-text h1,
@@ -81,6 +81,7 @@
     flex-direction: column;
     align-items: center;
     max-width: 75vw;
+    margin-bottom: 100px;
   }
 
   .about-section.intro .intro-text {
