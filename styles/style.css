@@ -159,7 +159,6 @@ a {
 
 /* Class for pages where scrolling is enabled */
 .scrollable-body {
-  overflow-x: "false";
-  overflow-y: auto;
+  overflow: auto;
   /* Enable scrolling for pages with this class */
 }
