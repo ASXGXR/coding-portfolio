@@ -18,6 +18,7 @@
   object-position: 100% center;
 }
 
+
 /* Overlay styles */
 .overlay {
   position: fixed;
@@ -88,7 +89,6 @@
   flex-shrink: 0;
   /* Prevent the image from shrinking */
   margin: 0 20px;
-  /* Space around the image */
 }
 
 .image-container.left {
@@ -105,6 +105,8 @@ model-viewer {
   height: 500px;
 }
 
+/* Text */
+
 .section .text-content {
   width: auto;
   max-width: 65vw;
@@ -113,6 +115,18 @@ model-viewer {
 
 .section.with-image .text-content {
   max-width: 36vw;
+}
+
+.section p {
+  font-size: 1.4vw;
+}
+
+.section h1 {
+  font-size: 2.7vw;
+}
+
+.section h3 {
+  font-size: 1.8vw;
 }
 
 .image-container {
@@ -124,7 +138,7 @@ model-viewer {
   max-width: 40%;
 }
 
-/* Optional: Responsive adjustments for smaller screens */
+/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   .section {
     flex-direction: column;
@@ -133,5 +147,21 @@ model-viewer {
   .image-container {
     margin-bottom: 15px;
     max-width: 80%;
+  }
+
+  .section p {
+    font-size: 4.8vw;
+  }
+
+  .section h1 {
+    font-size: 7vw;
+  }
+
+  .section h3 {
+    font-size: 5.6vw;
+  }
+
+  .section.with-image .text-content {
+    max-width: 65vw;
   }
 }
