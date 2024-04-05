@@ -161,5 +161,6 @@ a {
 /* Class for pages where scrolling is enabled */
 .scrollable-body {
   overflow-y: auto;
+  overflow-x: hidden;
   /* Enable scrolling for pages with this class */
 }
