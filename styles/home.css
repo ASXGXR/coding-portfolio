@@ -105,10 +105,14 @@ model-viewer {
   height: 500px;
 }
 
-.text-content {
+.section .text-content {
   width: auto;
-  max-width: 36vw;
+  max-width: 65vw;
   justify-items: center;
+}
+
+.section.with-image .text-content {
+  max-width: 36vw;
 }
 
 .image-container {
