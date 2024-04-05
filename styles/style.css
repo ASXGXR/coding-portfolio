@@ -156,3 +156,10 @@ a {
   font-size: 13px;
   /* Small text size, adjust as needed */
 }
+
+/* Class for pages where scrolling is enabled */
+.scrollable-body {
+  overflow-x: "false";
+  overflow-y: auto;
+  /* Enable scrolling for pages with this class */
+}
