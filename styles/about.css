@@ -7,7 +7,7 @@
   flex-wrap: wrap;
   max-width: 70vw;
   margin-top: 30px;
-  margin-bottom: 145px;
+  margin-bottom: 150px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -19,6 +19,13 @@
 
 .about-section p {
   font-size: 1.8vw;
+}
+
+.about-text h1,
+.about-text h2 {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 2.6vw;
 }
 
 .about-section.intro .intro-text p {
@@ -37,12 +44,6 @@
   width: 100%;
   padding-top: 56.25%;
   max-width: 45vw;
-}
-
-.about-text h1,
-.about-text h2 {
-  text-align: left;
-  margin-bottom: 20px;
 }
 
 .about-image-1,
