@@ -4,8 +4,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
   // HIDDEN ELEMENTS
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      entry.target.classList.toggle('show', entry.isIntersecting);
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      } else {
+        entry.target.classList.remove('show');
+      }
     });
+  }, {
+    rootMargin: '0px 0px -200px 0px'
   });
 
   document.querySelectorAll('.hidden').forEach(el => observer.observe(el));
