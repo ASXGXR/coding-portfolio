@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       }
     });
   }, {
-    rootMargin: '0px 0px -250px 0px'
+    rootMargin: '0px 0px -230px 0px'
   });
 
   document.querySelectorAll('.hidden').forEach(el => observer.observe(el));
