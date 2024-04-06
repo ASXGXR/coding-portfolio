@@ -19,7 +19,8 @@
 }
 
 
-/* Overlay styles */
+/* Overlay settings */
+
 .overlay {
   position: fixed;
   top: 0;
@@ -34,7 +35,6 @@
   opacity: 0;
   transition: opacity 0.5s ease;
   overflow-y: auto;
-  padding: 20px;
 }
 
 .overlay.show {
@@ -87,15 +87,14 @@
 
 .image-container {
   flex-shrink: 0;
-  /* Prevent the image from shrinking */
   margin: 0 20px;
+  order: 0;
+  margin-bottom: 15px;
+  max-width: 40%;
 }
 
 .image-container.left {
   order: -1;
-}
-
-.image-container.left {
   width: 50vw;
   height: auto;
 }
@@ -129,15 +128,6 @@ model-viewer {
   font-size: 1.8vw;
 }
 
-.image-container {
-  order: 0;
-}
-
-.image-container {
-  margin-bottom: 15px;
-  max-width: 40%;
-}
-
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   .section {
@@ -145,8 +135,8 @@ model-viewer {
   }
 
   .image-container {
-    margin-bottom: 15px;
-    max-width: 80%;
+    margin-top: 25px;
+    margin-bottom: 0px;
   }
 
   .section p {
@@ -161,7 +151,8 @@ model-viewer {
     font-size: 5.6vw;
   }
 
-  .section.with-image .text-content {
+  .section.with-image .text-content,
+  .image-container {
     max-width: 65vw;
   }
 }
