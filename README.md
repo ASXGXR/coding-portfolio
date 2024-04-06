@@ -17,10 +17,6 @@ This portfolio is built using the following technologies:
 - **CSS3**: For styling and bringing the design to life with animations and transitions.
 - **JavaScript**: Adds interactivity and enhances the user experience.
 
-## Special Thanks
-
-A special shoutout to **Hyperplexed** for the image track functionality. You can check out their tutorial [here](https://youtu.be/PkADl0HubMY).
-
 ## Getting Started
 
 To explore my portfolio:
@@ -45,6 +41,10 @@ Interested in collaborating? Fantastic! I'm always open to new ideas and partner
 - **LinkedIn**: [Alex Sagar](https://linkedin.com/in/alex-sagar)
 
 Whether it's a project idea, a coding challenge, or just to say hi, don't hesitate to reach out. Let's create something amazing together!
+
+## Special Thanks
+
+A special shoutout to **Hyperplexed** for the image track functionality. You can check out their tutorial [here](https://youtu.be/PkADl0HubMY).
 
 ## License
 
