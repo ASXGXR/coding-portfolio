@@ -31,8 +31,6 @@ cd <repository-name>
 ```
 3. Open `index.html` in your browser to view the portfolio.
 
-Certainly! I've updated the section to focus on collaboration and included your specified email and LinkedIn profile. Here's the revised `README.md` snippet for your coding portfolio on GitHub:
-
 ## Collaboration
 
 Interested in collaborating? Fantastic! I'm always open to new ideas and partnerships. Here's how you can get in touch:
