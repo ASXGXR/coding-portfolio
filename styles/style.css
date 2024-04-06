@@ -9,18 +9,19 @@ body {
   overflow-y: hidden;
 }
 
-.hidden,
-.show {
+/* Hidden Functionality */
+
+.hidden {
   transition: all 1s;
   transform: translateX(100%);
   opacity: 0;
 }
 
 .show {
+  transition: all 1s;
   transform: translate(0);
   opacity: 1;
 }
-
 
 nav {
   background-color: #000000;
