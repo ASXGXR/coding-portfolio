@@ -1,6 +1,6 @@
 # Coding Portfolio
 
-Welcome to my personal coding portfolio, a comprehensive showcase of my design and development skills. This repository displays my creative endeavors, coded using HTML, JavaScript, and CSS to ensure a sleek design and complementary features.
+Welcome to my personal coding portfolio, a comprehensive showcase of my design and development skills. This repository showcases my creative projects, crafted with HTML, JavaScript, and CSS for a polished design and harmonious functionality.
 
 
 ## Features
