@@ -8,7 +8,6 @@
   top: 50%;
   transform: translate(0%, -50%);
   user-select: none;
-  /* -- Prevent image highlighting -- */
 }
 
 #image-track>.image {
@@ -16,6 +15,7 @@
   height: 56vmin;
   object-fit: cover;
   object-position: 100% center;
+  cursor: pointer;
 }
 
 
