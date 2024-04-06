@@ -19,17 +19,21 @@ This portfolio is built using the following technologies:
 
 ## Getting Started
 
-To explore my portfolio:
+To explore my portfolio online, visit [alexsagar.com](http://alexsagar.com).
 
-1. Clone the repository:
+Alternatively, to run the portfolio locally on your machine:
+
+1. **Clone the repository**:
 ```bash
 git clone https://github.com/asxgxr/coding-portfolio.git
 ```
-2. Navigate to the project directory:
+
+2. **Navigate to the project directory** (replace `<repository-name>` with the actual name of the directory that was created when you cloned the repository, usually `coding-portfolio`):
 ```bash
 cd <repository-name>
 ```
-3. Open `index.html` in your browser to view the portfolio.
+
+3. **Open `index.html`** in your browser to view the portfolio.
 
 ## Collaboration
 
