@@ -5,7 +5,7 @@ Welcome to my personal coding portfolio, a comprehensive showcase of my design a
 
 ## Features
 
-- **Responsive Design**: Ensures a seamless viewing experience across various devices and screen sizes.
+- **Responsive Design**: Ensures a seamless viewing experience across various screen sizes.
 - **Image Track Functionality**: A dynamic and interactive way to display projects, enhancing user engagement and visual appeal.
 - **Custom Animations**: Crafted using CSS and JavaScript to breathe life into the user interface.
 - **Intuitive Navigation**: Designed to offer a straightforward and enjoyable browsing experience.
