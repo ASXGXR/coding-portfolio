@@ -19,7 +19,7 @@ This portfolio is built using the following technologies:
 
 ## Getting Started
 
-To explore my portfolio online, visit [alexsagar.com](http://alexsagar.com).
+To explore my portfolio online, you can simply visit [alexsagar.com](http://alexsagar.com).
 
 Alternatively, to run the portfolio locally on your machine:
 
