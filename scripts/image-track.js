@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
       isTrackMoving = false;
       updateCursorStyle(); // Revert cursor after animation completes
-    }, 1200);
+    }, 50);
   };
 
   window.onmousedown = e => handleOnDown(e);
