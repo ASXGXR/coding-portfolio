@@ -1,6 +1,6 @@
 # Coding Portfolio
 
-Welcome to my personal coding portfolio, a comprehensive showcase of my design and development skills, crafted with a keen eye for detail and a passion for innovation. This repository holds the heart of my creative endeavors, where HTML, JavaScript, and CSS converge to present a portfolio that's not just a collection of projects but a narrative of my journey in coding.
+Welcome to my personal coding portfolio, a comprehensive showcase of my design and development skills. This repository holds my creative endeavors, where HTML, JavaScript, and CSS converge to present a portfolio that's not just a collection of projects but a narrative of my journey in coding.
 
 ## Features
 
@@ -19,7 +19,7 @@ This portfolio is built using the following technologies:
 
 ## Special Thanks
 
-A special shoutout to **Hyperplexed** for the innovative image track functionality that adds a unique twist to the portfolio. Check out their tutorial [here](https://youtu.be/PkADl0HubMY) for more insightful content.
+A special shoutout to **Hyperplexed** for the image track functionality. Check out their tutorial [here](https://youtu.be/PkADl0HubMY).
 
 ## Getting Started
 
