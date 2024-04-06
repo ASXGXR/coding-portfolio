@@ -2,12 +2,14 @@
 
 Welcome to my personal coding portfolio, a comprehensive showcase of my design and development skills. This repository displays my creative endeavors, coded using HTML, JavaScript, and CSS to ensure a sleek design and complementary features.
 
+
 ## Features
 
 - **Responsive Design**: Ensures a seamless viewing experience across various devices and screen sizes.
 - **Image Track Functionality**: A dynamic and interactive way to display projects, enhancing user engagement and visual appeal.
 - **Custom Animations**: Crafted using CSS and JavaScript to breathe life into the user interface.
 - **Intuitive Navigation**: Designed to offer a straightforward and enjoyable browsing experience.
+
 
 ## Technologies
 
@@ -16,6 +18,7 @@ This portfolio is built using the following technologies:
 - **HTML5**: The backbone of the project, structuring the content.
 - **CSS3**: For styling and bringing the design to life with animations and transitions.
 - **JavaScript**: Adds interactivity and enhances the user experience.
+
 
 ## Getting Started
 
@@ -35,6 +38,7 @@ cd <repository-name>
 
 3. **Open `index.html`** in your browser to view the portfolio.
 
+
 ## Collaboration
 
 Interested in collaborating? Fantastic! I'm always open to new ideas and partnerships. Here's how you can get in touch:
@@ -44,9 +48,11 @@ Interested in collaborating? Fantastic! I'm always open to new ideas and partner
 
 Whether it's a project idea, a coding challenge, or just to say hi, don't hesitate to reach out. Let's create something amazing together!
 
+
 ## Special Thanks
 
 A special shoutout to **Hyperplexed** for the image track functionality. You can check out their tutorial [here](https://youtu.be/PkADl0HubMY).
+
 
 ## License
 
