@@ -19,7 +19,7 @@ This portfolio is built using the following technologies:
 
 ## Special Thanks
 
-A special shoutout to **Hyperplexed** for the image track functionality. Check out their tutorial [here](https://youtu.be/PkADl0HubMY).
+A special shoutout to **Hyperplexed** for the image track functionality. You can check out their tutorial [here](https://youtu.be/PkADl0HubMY).
 
 ## Getting Started
 
