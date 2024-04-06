@@ -53,5 +53,3 @@ This project is open-sourced under the MIT License. See the [LICENSE](LICENSE.md
 
 
 Thank you for visiting my coding portfolio. Dive in and explore my world of coding and creativity!
-
----
