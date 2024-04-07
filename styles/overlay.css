@@ -55,7 +55,7 @@
 .section {
   display: flex;
   align-items: center;
-  margin: 25px auto;
+  margin: 30px auto;
   /* Space between sections */
   justify-content: center;
 }
@@ -118,7 +118,7 @@ model-viewer {
 
 .image-container.right.diag-fade img {
   position: absolute;
-  top: 115px;
+  top: 110px;
   left: 0;
   width: 100%;
   height: auto;
