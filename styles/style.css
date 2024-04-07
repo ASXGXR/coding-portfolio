@@ -109,7 +109,7 @@ nav a {
   font-family: 'Poppins', sans-serif;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
-  margin: 5px 0;
+  margin: 10px 0;
   text-decoration: none;
 }
 
@@ -125,38 +125,6 @@ nav a {
 a {
   color: white;
   text-decoration: underline;
-}
-
-/* Loading screen */
-#loading-screen {
-  position: fixed;
-  /* Use fixed positioning to cover the whole screen */
-  top: 0;
-  left: 0;
-  width: 100%;
-  /* Cover the full width */
-  height: 100%;
-  /* Cover the full height */
-  background-color: black;
-  /* Black background */
-  display: flex;
-  /* Use flexbox for centering */
-  justify-content: center;
-  /* Center horizontally */
-  align-items: center;
-  /* Center vertically */
-  z-index: 1000;
-  /* Ensure it's above other content */
-  color: white;
-  /* White text color */
-  font-family: 'Poppins', sans-serif;
-  /* Use Poppins font */
-}
-
-/* Percentage counter style */
-.percentage-counter {
-  font-size: 13px;
-  /* Small text size, adjust as needed */
 }
 
 /* Class for pages where scrolling is enabled */
