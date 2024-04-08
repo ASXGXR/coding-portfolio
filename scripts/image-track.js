@@ -85,22 +85,32 @@ document.addEventListener('DOMContentLoaded', () => {
     track.dataset.percentage = nextPercentage;
     updatePercentageMeter(nextPercentage);
 
+    // Specify easing within the animate function for a smooth halt
     track.animate({
       transform: `translate(${nextPercentage}%, -50%)`
-    }, { duration: 1200, fill: "forwards" });
+    }, {
+      duration: 1200,
+      fill: "forwards",
+      easing: "ease-out"
+    });
 
     for (const image of track.getElementsByClassName("image")) {
       image.animate({
         objectPosition: `${100 + nextPercentage}% center`
-      }, { duration: 1200, fill: "forwards" });
+      }, {
+        duration: 1200,
+        fill: "forwards",
+        easing: "ease-out"  // Ensure images also have smooth movement
+      });
     }
 
     setTimeout(() => {
       isTrackMoving = false;
       updateCursorStyle();
-      showScrollMessage(); // Start the timer for showing the message after scrolling stops
-    }, 500);
+      showScrollMessage();
+    }, 1200);
   };
+
 
   // Function to update the percentage meter based on the current position
   const updatePercentageMeter = (percentage) => {
