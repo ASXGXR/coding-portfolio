@@ -34,7 +34,7 @@
 }
 
 #scroll-message::before {
-  content: "Scroll to Pan";
+  content: "Scroll or Drag to Pan";
   /* Default content for non-mobile devices */
 }
 
