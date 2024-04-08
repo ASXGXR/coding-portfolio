@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Function to update the percentage meter based on the current position
   const updatePercentageMeter = (percentage) => {
     const meter = document.getElementById("percentage-meter");
-    const adjustedPercentage = 100 + percentage;
+    const adjustedPercentage = 100 - (percentage + 100);
     const leftPosition = adjustedPercentage - (50 / window.innerWidth * 100);
     meter.style.left = `${leftPosition}%`;
   };
