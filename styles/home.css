@@ -59,6 +59,6 @@
   background-color: lightgrey;
   width: 50px;
   position: absolute;
-  right: 0%;
+  left: 0%;
   transition: left 1s ease-out;
 }
