@@ -115,7 +115,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Function to update the percentage meter based on the current position
   const updatePercentageMeter = (percentage) => {
     const meter = document.getElementById("percentage-meter");
-    // Calculate the adjusted percentage
     const adjustedPercentage = 100 - (percentage + 100);
     const pixelOffset = 25; // Half of the meter's width
     const viewportWidth = window.innerWidth;
