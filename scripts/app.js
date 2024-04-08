@@ -1,13 +1,14 @@
 // app.js
 
 document.addEventListener('DOMContentLoaded', (event) => {
-  // HIDDEN ELEMENTS
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
+        entry.target.style.transition = 'all 1s'; // Apply transition dynamically
         entry.target.classList.add('show');
       } else {
         entry.target.classList.remove('show');
+        entry.target.style.transition = 'none'; // Remove transition when not in view
       }
     });
   }, {
