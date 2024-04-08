@@ -62,6 +62,9 @@
 
 .section.with-image {
   justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .image-container {
@@ -111,17 +114,26 @@ model-viewer {
 /* Logo Fade */
 
 .image-container.right.diag-fade {
+  display: flex;
   position: relative;
-  width: 500px;
+  align-items: center;
+  justify-content: center;
   height: 500px;
+  width: 500px;
+  overflow: hidden;
 }
 
 .image-container.right.diag-fade img {
-  position: absolute;
-  top: 110px;
-  left: 0;
-  width: 100%;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
   height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Center the image */
   transition: opacity 0.5s ease-in-out, clip-path 0.5s ease-in-out;
 }
 
@@ -133,7 +145,6 @@ model-viewer {
   z-index: 9999;
   opacity: 0;
   clip-path: polygon(0 0, 0% 0, 0 0%, 0 100%);
-  transition: opacity 0.5s ease-in-out, clip-path 0.5s ease-in-out;
 }
 
 .image-container.right.diag-fade:hover .top-image {
@@ -142,15 +153,25 @@ model-viewer {
 }
 
 
+.image-container.right.diag-fade,
+.image-container.right.diag-fade img {
+  margin: 0;
+  padding: 0;
+}
+
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   .section {
     flex-direction: column;
+    align-items: center;
   }
 
-  .image-container {
+  .image-container,
+  .image-container.left {
     margin-top: 25px;
     margin-bottom: 0px;
+    height: auto;
+    order: 0;
   }
 
   .section p {
@@ -168,5 +189,12 @@ model-viewer {
   .section.with-image .text-content,
   .image-container {
     max-width: 65vw;
+  }
+
+  .image-container.left iframe,
+  .image-container iframe {
+    width: 100%;
+    height: 40vh;
+    max-width: 100%;
   }
 }

@@ -34,7 +34,7 @@
 }
 
 #scroll-message::before {
-  content: "Scroll or Drag to Pan";
+  content: "Scroll to Pan";
   /* Default content for non-mobile devices */
 }
 
@@ -45,20 +45,17 @@
   }
 }
 
-#percentage-meter-container {
+/* #percentage-meter-container {
   width: 100%;
   background-color: black;
   height: 2px;
   position: fixed;
   bottom: 0;
-  overflow: hidden;
 }
 
 #percentage-meter {
   height: 100%;
   background-color: lightgrey;
-  width: 50px;
-  position: absolute;
-  left: 0%;
-  transition: left 0.3s ease-out;
-}
+  width: 0%;
+  transition: width 1s ease-out;
+} */
