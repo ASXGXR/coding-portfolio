@@ -131,13 +131,30 @@ a {
 .scrollable-body {
   overflow-y: auto;
   overflow-x: hidden;
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
 }
 
-.scrollable-body::-webkit-scrollbar {
-  display: none;
-  /* Chrome, Safari, and Opera */
+
+
+
+/* SCROLL BAR */
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #b3b3b3;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Targets the scrollbar track in Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #b3b3b3 transparent;
 }

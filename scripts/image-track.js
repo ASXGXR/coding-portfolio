@@ -116,11 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const updatePercentageMeter = (percentage) => {
     const meter = document.getElementById("percentage-meter");
     const adjustedPercentage = 100 - (percentage + 100);
-    const pixelOffset = 25; // Half of the meter's width
-    const viewportWidth = window.innerWidth;
-    const percentageOffset = (pixelOffset / viewportWidth) * 100;
-
-    const leftPosition = adjustedPercentage - percentageOffset; // Center the meter
+    const leftPosition = adjustedPercentage - (50 / window.innerWidth * 100);
     meter.style.left = `${leftPosition}%`;
   };
 
