@@ -1,6 +1,8 @@
 # Coding Portfolio
 
-Welcome to my personal coding portfolio, a comprehensive showcase of my design and development skills. This repository showcases my creative projects, crafted with HTML, JavaScript, and CSS for a polished design and harmonious functionality.
+Welcome to my personal coding portfolio, a comprehensive showcase of my design and development skills. This repository showcases my creative projects, crafted with HTML, JavaScript, and CSS for a polished and responsive design.
+
+To explore my portfolio online, you can visit [alexsagar.com](https://alexsagar.com).
 
 
 ## Features
@@ -20,38 +22,19 @@ This portfolio is built using the following technologies:
 - **JavaScript**: Adds interactivity and enhances the user experience.
 
 
-## Getting Started
-
-To explore my portfolio online, you can simply visit [alexsagar.com](https://alexsagar.com).
-
-Alternatively, to run the portfolio locally on your machine:
-
-1. **Clone the repository**:
-```bash
-git clone https://github.com/asxgxr/coding-portfolio.git
-```
-
-2. **Navigate to the project directory** (replace `<repository-name>` with the actual name of the directory that was created when you cloned the repository, usually `coding-portfolio`):
-```bash
-cd <repository-name>
-```
-
-3. **Open `index.html`** in your browser to view the portfolio.
-
-
 ## Collaboration
 
 Interested in collaborating? Fantastic! I'm always open to new ideas and partnerships. Here's how you can get in touch:
 
 - **Email**: [alexsagar13@gmail.com](mailto:alexsagar13@gmail.com)
-- **LinkedIn**: [Alex Sagar](https://linkedin.com/in/alex-sagar)
+- **LinkedIn**: [linkedin.com/in/alex-sagar](https://linkedin.com/in/alex-sagar)
 
 Whether it's a project idea, a coding challenge, or just to say hi, don't hesitate to reach out. Let's create something amazing together!
 
 
 ## Special Thanks
 
-A special shoutout to **Hyperplexed** for the image track functionality. You can check out their tutorial [here](https://youtu.be/PkADl0HubMY).
+A special shoutout to **Hyperplexed** for the original image track functionality. You can check out their tutorial [here](https://youtu.be/PkADl0HubMY).
 
 
 ## License
