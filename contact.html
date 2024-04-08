@@ -39,7 +39,7 @@
     </p>
 
     <!-- Contact Form -->
-    <form id="contact-form" action="your-server-endpoint" method="POST">
+    <form id="contact-form" action="mail_handler.php" method="POST">
       <fieldset>
         <legend>Contact Information</legend>
 
@@ -51,12 +51,11 @@
 
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="4" required></textarea>
+
+        <input type="submit" value="Send Message" class="button">
       </fieldset>
       </a>
     </form>
-
-    <a class="button" type="submit">
-      Send Message</a>
   </section>
 
   <!-- Additional Contact Details -->
