@@ -12,16 +12,17 @@ body {
 /* Hidden Functionality */
 
 .hidden {
-  transition: all 1s;
   transform: translateX(100%);
   opacity: 0;
 }
 
 .show {
   transition: all 1s;
-  transform: translate(0);
+  transform: translateX(0);
   opacity: 1;
 }
+
+/* Nav Bar */
 
 nav {
   background-color: #000000;
@@ -54,6 +55,8 @@ nav a {
   font-weight: 400;
   font-size: 18px;
 }
+
+/* Bounce Arrow */
 
 .arrow-container {
   cursor: pointer;
@@ -99,6 +102,8 @@ nav a {
   }
 }
 
+/* Buttons */
+
 .button {
   display: inline-block;
   background-color: black;
@@ -134,8 +139,6 @@ a {
 }
 
 
-
-
 /* SCROLL BAR */
 
 ::-webkit-scrollbar-track {
@@ -151,10 +154,11 @@ a {
 
 ::-webkit-scrollbar {
   width: 12px;
+  display: none;
 }
 
 /* Targets the scrollbar track in Firefox */
 * {
-  scrollbar-width: thin;
   scrollbar-color: #b3b3b3 transparent;
+  scrollbar-width: auto;
 }
