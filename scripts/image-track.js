@@ -115,13 +115,17 @@ document.addEventListener('DOMContentLoaded', () => {
   // Function to update the percentage meter based on the current position
   const updatePercentageMeter = (percentage) => {
     const meter = document.getElementById("percentage-meter");
-    const adjustedPercentage = 100 - (percentage + 100);
+    const meter2 = document.getElementById("percentage-meter-2");
+    const adjustedPercentage = 95 - (percentage + 100);
     const pixelOffset = 25; // Half of the meter's width
     const viewportWidth = window.innerWidth;
     const percentageOffset = (pixelOffset / viewportWidth) * 100;
 
     const leftPosition = adjustedPercentage - percentageOffset; // Center the meter
+    const leftPosition2 = 197 - (percentage + 100) - percentageOffset;
+
     meter.style.left = `${leftPosition}%`;
+    meter2.style.left = `${leftPosition2}%`;
   };
 
   // Event listeners for mouse and touch events

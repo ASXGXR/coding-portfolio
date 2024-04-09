@@ -59,6 +59,15 @@
   background-color: lightgrey;
   width: 50px;
   position: absolute;
-  left: 95%;
+  left: -10%;
+  transition: left 1s ease-out;
+}
+
+#percentage-meter-2 {
+  height: 100%;
+  background-color: lightgrey;
+  width: 50px;
+  position: absolute;
+  left: 94%;
   transition: left 1s ease-out;
 }
