@@ -3,6 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
   let isTrackMoving = false;
   let movementTimer = null;
 
+  // Modify these values to adjust the slow-down effect
+  const animationDuration = 3000;
+  const easingFunction = 'ease-out';
+
   // Function to update the cursor style
   const updateCursorStyle = () => {
     const cursorStyle = isTrackMoving ? 'grabbing' : 'pointer';
@@ -58,12 +62,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     track.animate({
       transform: `translate(${nextPercentage}%, -50%)`
-    }, { duration: 1200, fill: "forwards" });
+    }, { duration: animationDuration, fill: "forwards", easing: easingFunction });
 
     for (const image of track.getElementsByClassName("image")) {
       image.animate({
         objectPosition: `${100 + nextPercentage}% center`
-      }, { duration: 1200, fill: "forwards" });
+      }, { duration: animationDuration, fill: "forwards", easing: easingFunction });
     }
   };
 
@@ -88,27 +92,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // Specify easing within the animate function for a smooth halt
     track.animate({
       transform: `translate(${nextPercentage}%, -50%)`
-    }, {
-      duration: 1200,
-      fill: "forwards",
-      easing: "ease-out"
-    });
+    }, { duration: animationDuration, fill: "forwards", easing: easingFunction });
 
     for (const image of track.getElementsByClassName("image")) {
       image.animate({
         objectPosition: `${100 + nextPercentage}% center`
-      }, {
-        duration: 1200,
-        fill: "forwards",
-        easing: "ease-out"  // Ensure images also have smooth movement
-      });
+      }, { duration: animationDuration, fill: "forwards", easing: easingFunction });
     }
 
     setTimeout(() => {
       isTrackMoving = false;
       updateCursorStyle();
       showScrollMessage();
-    }, 1200);
+    }, animationDuration);
   };
 
 
